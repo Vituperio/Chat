@@ -9,7 +9,7 @@
     <div class="chat_wrapper">
       <div class="message_box" id="message_box"></div>
       <div class="panel">
-          <input type="text" name="message" id="message" placeholder="Message" maxlength="80" style="width: 88%;"/>
+          <input type="text" name="message" id="message" placeholder="Message" maxlength="80" style="width: 89%;"/>
           <button id="send-btn">Send</button>
       </div>
     </div>

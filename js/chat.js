@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-  var serverUri = "127.0.0.1"; // Enter address to your chat server (where 'chat/server.php' is located).
+  var serverUri = "192.12.193.76"; // Enter address to your chat server (where 'chat/server.php' is located).
 
   //create a new WebSocket object.
   var wsUri = "ws://" + serverUri + ":9000/chat/server.php"; 	
@@ -12,7 +12,7 @@ $(document).ready(function(){
   
   $('#send-btn').click(function(){ //use clicks message send button	
     var mymessage = $('#message').val(); //get message text
-    var myname = $('#name').val(); //get user name
+    var myname = $.cookie('name'); //get user name
 
     if(myname == ""){ //empty name?
       alert("Enter your Name please!");
